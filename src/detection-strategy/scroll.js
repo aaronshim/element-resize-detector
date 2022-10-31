@@ -75,7 +75,7 @@ module.exports = function(options) {
             };
 
             var styleElement = targetDocument.createElement("style");
-            styleElement.innerHTML = style;
+            styleElement.textContent = style;
             styleElement.id = styleId;
             method(styleElement);
             return styleElement;
